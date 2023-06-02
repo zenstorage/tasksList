@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #171b1f;
+}
+
+#taskC {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 700px;
+    background-color: transparent;
+    margin: 20px 0 20px 0;
+}
+#taskT {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+#taskText::placeholder {
+    color: #8ea1b1;
+}
+#taskText {
+    flex: 1;
+    padding: 5px 8px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #5c6d80;
+    border-radius: 15px;
+    color: #e3eaf0;
+    transition: 0.15s ease-in;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+#taskText:hover {
+    border: 1px solid #a7bdd8;
+    background-color: #20252b;
+}
+#taskText:focus-visible {
+    outline: none;
+    background-color: #20252b;
+}
+#plus {
+    font-size: 40px;
+    width: 44px;
+    text-align: center;
+    color: #a7bdd8;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #4b5a6b;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+#plus:hover {
+    background-color: #60748b;
+    color: #c7d8ec;
+}
+#tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    transition: 2s ease;
+}
+.tasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.task {
+    padding: 5px 8px;
+    font-size: 16px;
+    color: #c9d5df;
+    border: 1px solid #5c6d80;
+    border-radius: 8px;
+    height: 34px;
+    flex: 1;
+    transition: 0.1s ease;
+}
+.task.marked {
+    text-decoration: line-through;
+    border: 1px solid #2c353f;
+    color: #2c353f;
+}
+.icons {
+    color: #a7bdd8;
+    font-size: 20px;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+.icons:hover {
+    color: #c7d8ec;
+}
+.trash {
+    margin-left: 10px;
+    font-size: 24px;
+}
+.square {
+    margin-right: 10px;
+}
+#clear {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #5c6d80;
+    font-size: 30px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+#clear:hover {
+    color: #9ebde0;
+    transform: scale(1.2);
+}
